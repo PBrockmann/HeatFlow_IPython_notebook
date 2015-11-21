@@ -1,0 +1,9 @@
+
+define axis/X=-179:179:2/unit=degrees_east lon
+define axis/Y=-89:89:2/unit=degrees_north lat
+define grid/X=lon/Y=lat gg
+
+file/grid=gg/skip=1/var=lon,lat,hf_mean,hf_med,hf_error ggge20271-sup-0004-Data_Table1_Eq_lon_lat_Global_HF_tab.txt
+
+shade/lev=(0,400,10)(INF) HF_MEAN
+go land
